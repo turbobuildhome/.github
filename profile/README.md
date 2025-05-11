@@ -1,9 +1,9 @@
-## Hi there 👋
+## Welcome there
 
-TurboBuild is a build acceleration solution It can significantly reduce compilation time, 
-at least by more than half. 
-Doesn't require you to do anything, just a config file. It works just fine.
-If you work on windows, use mscv. It's the only free tool that can do it.
+TurboBuild is a build acceleration tool.  
+It can significantly reduce compilation time, at least by more than half.   
+Doesn't require you to do anything, just a config file. It works just fine.  
+If you work on windows, use mscv. It's the only free tool that can do it.  
 
 
 <!--
