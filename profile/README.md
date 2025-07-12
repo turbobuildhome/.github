@@ -6,7 +6,35 @@ Doesn't require you to do anything, just a config file. It works just fine.
 If you work on windows, use mscv. It's the only free tool that can do it.  
 
 ## How to use
+step 1
+Run the program you need
 
+buildassist.exe => VS Build Task Access Program  
+captain.exe => Managers of cluster nodes  
+crew.exe => cluster nodes  
+cocrew.exe => cluster nodes  
+redirect64.dll  
+
+first run captain.exe on the device you need, it is a management service.
+second run crew.exe with -h args add add connect to captain.exe.
+
+crew.exe -h 192.168.2.1 that connect to captain.exe run on 192.168.2.1
+
+1> Visual Studio Sloution  
+just add a Directory.Build.props xml config file into your sloution file path.
+
+Directory.Build.props
+```xml
+<Project>
+  <PropertyGroup>
+	<CLToolExe>buildassist.exe</CLToolExe>
+	<CLToolPath>D:\turbobuild</CLToolPath>
+  </PropertyGroup>
+</Project>
+```
+you just simply need modify CLToolPath item, use your actual local buildassist.exe path.  
+
+When you build again, the task has been quietly distributed to all the nodes in the cluster.
 
 ## Cloud process technology
 The local process can run on any accessible device, just as it would run locally. 
