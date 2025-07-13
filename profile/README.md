@@ -3,23 +3,31 @@
 TurboBuild is a build acceleration tool.  
 It can significantly reduce compilation time, at least by more than half.   
 Doesn't require you to do anything, just a config file. It works just fine.  
-If you work on windows, use mscv. It's the only free tool that can do it.  
+If you work on windows, use mscv. It's the only free tool that can do it. 
+  
 
 ## How to use
-step 1
-Run the program you need
 
-buildassist.exe => VS Build Task Access Program  
-captain.exe => Managers of cluster nodes  
-crew.exe => cluster nodes  
-cocrew.exe => cluster nodes  
+buildassist.exe => build task access，adaptation to different build tools, vs\cmake\ninja. 
+captain.exe => Cluster Manager   
+crew.exe => Cluster worker   
+cocrew.exe => Cluster worker second  
 redirect64.dll  
 
-first run captain.exe on the device you need, it is a management service.
-second run crew.exe with -h args add add connect to captain.exe.
+### step 1.  
+Run the program you need
 
-crew.exe -h 192.168.2.1 that connect to captain.exe run on 192.168.2.1
+first run captain.exe on the any device you need, it is a management service.  
+acceptance of crew.exe registration. 
 
+
+### step 2.
+Second run crew.exe with -h args pass addr registe to captain.exe.
+
+crew.exe -h 192.168.2.1 indication that connect to captain.exe run on 192.168.2.1 devices.
+
+step 3.  
+choose your opened sloution type.  
 1> Visual Studio Sloution  
 just add a Directory.Build.props xml config file into your sloution file path.
 
@@ -34,8 +42,9 @@ Directory.Build.props
 ```
 you just simply need modify CLToolPath item, use your actual local buildassist.exe path.  
 
-When you build again, the task has been quietly distributed to all the nodes in the cluster.
+When you build again, the task has been quietly distributed to all the worker nodes in the cluster.
 
+  
 ## Cloud process technology
 The local process can run on any accessible device, just as it would run locally. 
 The result of the execution is exactly the same as that of the local execution.
