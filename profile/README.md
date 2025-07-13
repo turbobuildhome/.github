@@ -8,6 +8,8 @@ If you work on windows, use mscv. It's the only free tool that can do it.
 
 ## How to use
 
+download  https://github.com/turbobuildhome/turbobuild
+
 buildassist.exe => build task access，adaptation to different build tools, vs\cmake\ninja. 
 captain.exe => Cluster Manager   
 crew.exe => Cluster worker   
