@@ -54,6 +54,9 @@ Based on this technology. The compilation process can be moved to any device wit
 Therefore, as long as the number of CPU cores in the cluster is sufficiently large, the number of concurrent compilations can approach the limit. and the compilation time can approach the minimum.
 <!--
 
+## Report Issue
+https://github.com/turbobuildhome/turbobuild/issues
+
 **Here are some ideas to get you started:**
 
 🙋‍♀️ A short introduction - what is your organization all about?
